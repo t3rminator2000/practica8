@@ -1,1 +1,1 @@
-# practica8
+# praktika 8
