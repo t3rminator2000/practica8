@@ -5,6 +5,7 @@ REST API учёта рейтинга студентов. Стек: Node.js, Expr
 ## Запуск
 
 npm install
+
 npm start
 
 Сервер: http://localhost:3000
