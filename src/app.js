@@ -9,6 +9,7 @@ const { AppError } = require('./errors');
 const app = express();
 
 app.use(express.json({ limit: '100kb' }));
+app.get('/', (req, res) => res.redirect('/api-docs'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapi));
 app.use('/api', routes);
 app.use((req, res, next) => next(new AppError(404, 'Маршрут не найден')));
